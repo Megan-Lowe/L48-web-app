@@ -16,32 +16,32 @@ export default function AppHeaderPartial() {
       <div className="flex items-center">
         <nav className="flex items-center justify-end">
           <li>
-            <Text variant="body1">
-              <a href="#">Programs</a>
+            <Text as="a" href="#">
+              Programs
             </Text>
           </li>
           <li>
-            <Text variant="body1">
+            <Text>
               <a href="#">Coaches</a>
             </Text>
           </li>
           <li>
-            <Text variant="body1">
+            <Text>
               <a href="#">Events</a>
             </Text>
           </li>
           <li>
-            <Text variant="body1">
+            <Text>
               <a href="#">Gallery</a>
             </Text>
           </li>
           <li>
-            <Text variant="body1">
+            <Text>
               <a href="#">Small Boat Booking</a>
             </Text>
           </li>
           <li>
-            <Text variant="body1">
+            <Text>
               <a href="#">Member Page</a>
             </Text>
           </li>
@@ -61,7 +61,21 @@ export default function AppHeaderPartial() {
           alt="facebooklogo"
         />
       </div>
-      <button>Login</button>
+      <div className="flex items-center border-red-800 border-solid border">
+        <span>
+          <Text>Log In</Text>
+        </span>
+
+        <span className="h-[50px] w-[50px]">
+          <Image
+            src="/images/person.svg"
+            height={50}
+            width={50}
+            alt="person icon"
+            className="bg-l48green rounded-full"
+          />
+        </span>
+      </div>
     </header>
   );
 }

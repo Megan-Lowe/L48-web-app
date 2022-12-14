@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { CSSProperties, useMemo } from "react";
 import clsx from "clsx";
 
 /**
@@ -17,12 +17,14 @@ import clsx from "clsx";
  * to the text content.
  */
 
-export default function Text<T extends React.ElementType = "span">({
+const Text: TextComponent = <T extends React.ElementType = "span">({
   as: asProp,
   children,
-  variant,
+  variant = "body1",
   transform,
-}: TextProps<T>) {
+  color,
+  className,
+}: TextProps<T>) => {
   const As = getAsComponent(asProp, variant);
 
   // This is a memoized value that will only be recalculated if the
@@ -39,20 +41,23 @@ export default function Text<T extends React.ElementType = "span">({
 
   return (
     <As
-      className={clsx({
+      style={{ color }}
+      className={clsx(className, {
         uppercase: transform === "uppercase",
         lowercase: transform === "lowercase",
 
-        "text-[rgb(116,188,68)] text-[40px] font-bold": variant === "heading1",
-        "text-[rgb(116,188,68)] text-[24px] font-bold": variant === "heading2",
+        "text-l48green": variant.includes("heading"),
+
+        "text-[40px] font-bold": variant === "heading1",
+        "text-[24px] font-bold": variant === "heading2",
         "text-white text-[15px]": variant === "body1",
-        "text-[rgb(116,188,68)] text-[14px]": variant === "body2",
+        "text-[14px]": variant === "body2",
       })}
     >
       {content}
     </As>
   );
-}
+};
 
 // This is a helper function that returns the correct element type
 // based on the `as` prop and the `variant` prop.
@@ -72,11 +77,19 @@ const getAsComponent = (asProp?: React.ElementType, variant?: TextVariants) => {
   );
 };
 
+export default Text;
+
+type TextComponent = <T extends React.ElementType>(
+  props: TextProps<T>
+) => React.ReactElement;
+
 export type TextProps<T extends React.ElementType> = {
   as?: T;
   children?: React.ReactNode;
   variant?: TextVariants;
   transform?: "uppercase" | "lowercase" | "capitalize";
+  className?: string;
+  color?: CSSProperties["color"];
 };
 
 type TextVariants = "heading1" | "heading2" | "body1" | "body2";
