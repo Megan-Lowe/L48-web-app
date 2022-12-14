@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: black;
+@layer base {
+  html {
+    background-color: black;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+  }
 }
