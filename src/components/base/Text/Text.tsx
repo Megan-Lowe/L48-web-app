@@ -83,13 +83,16 @@ type TextComponent = <T extends React.ElementType>(
   props: TextProps<T>
 ) => React.ReactElement;
 
-export type TextProps<T extends React.ElementType> = {
-  as?: T;
-  children?: React.ReactNode;
-  variant?: TextVariants;
-  transform?: "uppercase" | "lowercase" | "capitalize";
-  className?: string;
-  color?: CSSProperties["color"];
-};
-
 type TextVariants = "heading1" | "heading2" | "body1" | "body2";
+
+export type TextProps<T extends React.ElementType> = PolymorphicComponentProps<
+  T,
+  {
+    as?: T;
+    children?: React.ReactNode;
+    variant?: TextVariants;
+    transform?: "uppercase" | "lowercase" | "capitalize";
+    className?: string;
+    color?: CSSProperties["color"];
+  }
+>;
