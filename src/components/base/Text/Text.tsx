@@ -45,7 +45,7 @@ export default function Text<T extends React.ElementType = "span">({
 
         "text-[rgb(116,188,68)] text-[40px] font-bold": variant === "heading1",
         "text-[rgb(116,188,68)] text-[24px] font-bold": variant === "heading2",
-        "text-[rgb(116,188,68)] text-[16px]": variant === "body1",
+        "text-white text-[15px]": variant === "body1",
         "text-[rgb(116,188,68)] text-[14px]": variant === "body2",
       })}
     >
