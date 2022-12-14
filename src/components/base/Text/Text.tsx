@@ -24,6 +24,8 @@ const Text: TextComponent = <T extends React.ElementType = "span">({
   transform,
   color,
   className,
+  style,
+  ...props
 }: TextProps<T>) => {
   const As = getAsComponent(asProp, variant);
 
@@ -41,7 +43,7 @@ const Text: TextComponent = <T extends React.ElementType = "span">({
 
   return (
     <As
-      style={{ color }}
+      style={{ color, ...style }}
       className={clsx(className, {
         uppercase: transform === "uppercase",
         lowercase: transform === "lowercase",
@@ -53,6 +55,7 @@ const Text: TextComponent = <T extends React.ElementType = "span">({
         "text-white text-[15px]": variant === "body1",
         "text-[14px]": variant === "body2",
       })}
+      {...props}
     >
       {content}
     </As>
@@ -92,7 +95,6 @@ export type TextProps<T extends React.ElementType> = PolymorphicComponentProps<
     children?: React.ReactNode;
     variant?: TextVariants;
     transform?: "uppercase" | "lowercase" | "capitalize";
-    className?: string;
     color?: CSSProperties["color"];
   }
 >;
