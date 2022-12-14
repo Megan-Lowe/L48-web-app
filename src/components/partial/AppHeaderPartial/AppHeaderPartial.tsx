@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Text from "#components/base/Text";
+import Link from "next/link";
 
 export default function AppHeaderPartial() {
   return (
@@ -16,7 +17,7 @@ export default function AppHeaderPartial() {
       <div className="flex items-center">
         <nav className="flex items-center justify-end">
           <li>
-            <Text as="a" href="#">
+            <Text as={Link} href="#">
               Programs
             </Text>
           </li>
