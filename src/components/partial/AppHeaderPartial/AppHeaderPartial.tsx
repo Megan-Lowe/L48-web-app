@@ -23,6 +23,11 @@ export default function AppHeaderPartial() {
           </li>
           <li>
             <Text>
+              <a href="#">New Members</a>
+            </Text>
+          </li>
+          <li>
+            <Text>
               <a href="#">Coaches</a>
             </Text>
           </li>
@@ -41,26 +46,31 @@ export default function AppHeaderPartial() {
               <a href="#">Small Boat Booking</a>
             </Text>
           </li>
-          <li>
-            <Text>
-              <a href="#">Member Page</a>
-            </Text>
-          </li>
         </nav>
       </div>
-      <div className="flex items-center">
-        <Image
-          src="/images/intagramlogo.jpg"
-          height={20}
-          width={20}
-          alt="instagram logo"
-        />
-        <Image
-          src="/images/favebooklogo.jpg"
-          height={20}
-          width={20}
-          alt="facebooklogo"
-        />
+      <div className="flex items-center px-5">
+        <Link
+          href="https://www.facebook.com/Latitude-48-Paddling-Cold-Water-Ohana-641255982653985/"
+          target="_blank"
+        >
+          <Image
+            src="/images/facebook.png"
+            height={20}
+            width={20}
+            alt="facebooklogo"
+          />
+        </Link>
+        <Link
+          href="https://www.instagram.com/latitude48paddlingclub/"
+          target="_blank"
+        >
+          <Image
+            src="/images/instagram.png"
+            height={20}
+            width={20}
+            alt="instagram logo"
+          />
+        </Link>
       </div>
       <div className="flex items-center border-red-800 border-solid border">
         <span>
