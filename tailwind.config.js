@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        l48green: "rgb(116,188,68)",
+        l48green: "rgb(116, 188, 68)",
       },
     },
   },
