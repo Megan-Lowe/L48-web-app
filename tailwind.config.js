@@ -10,6 +10,7 @@ module.exports = {
         l48green: "rgb(116, 188, 68)",
         l48tan: "rgb(230, 230, 230)",
         l48grey: "rgb(128, 128, 128)",
+        l48muted: "rgb(209, 233, 193)",
       },
     },
   },

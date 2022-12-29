@@ -4,7 +4,9 @@
   grid-template-areas:
     "H HImage"
     "MImage M"
-    "C CImage";
+    "C CImage"
+    "LImage L"
+    "P PImage";
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -14,6 +16,10 @@
       "M"
       "MImage"
       "C"
-      "CImage";
+      "CImage"
+      "L"
+      "LImage"
+      "P"
+      "PImage";
   }
 }

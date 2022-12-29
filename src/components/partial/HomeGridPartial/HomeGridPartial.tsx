@@ -32,7 +32,7 @@ export default function HomeGridPartial() {
             <b>Racing:</b> Sure... if you want to! <br /> <br />
             <b>Program Fees:</b> $280 for six month season (Saturday only option
             also available)
-            <br />*
+            <br /> <span className="ml-3">*</span>
             <i>
               Paddlers will need a yearly CORA membership at $30 in order to
               participate.
@@ -90,7 +90,7 @@ export default function HomeGridPartial() {
             <b>Racing:</b> This program regularly participates in local and
             provincial races. <br /> <br />
             <b>Program Fees:</b> $280 for six month season
-            <br />*
+            <br /> <span className="ml-3">*</span>
             <i>
               Paddlers will need a yearly CORA membership at $30 in order to
               participate.
@@ -132,7 +132,7 @@ export default function HomeGridPartial() {
             international races through the late fall, spring and summer.
             <br /> <br />
             <b>Program Fees:</b> $320 for 6 month season
-            <br />*
+            <br /> <span className="ml-3">*</span>
             <i>
               Paddlers will need a yearly CORA membership at $30 in order to
               participate.
@@ -152,7 +152,101 @@ export default function HomeGridPartial() {
           alt="a crew of paddlers wearing green jerseys aproach a bridge in their OC6"
           style={{ gridArea: "CImage" }}
         />
-
+        <div
+          className="mx-auto bg-black p-5 basis-1/2"
+          style={{ gridArea: "L" }}
+        >
+          <Text
+            variant="heading1"
+            transform="uppercase"
+            className="text-lg"
+            color="l48green"
+          >
+            Learn to Outrigger
+          </Text>
+          <Text color="white">
+            <br />
+            <u>
+              We will be back with more learn to outrigger sessions in the early
+              spring - until then check out our horizon program!
+            </u>
+            <br />
+            <br />
+            Learn to paddle outrigger with Latitude 48! In four Saturday
+            sessions, we will introduce you to paddling outrigger canoe. You’ll
+            learn all about the boats, the paddling stroke, how to recover an
+            overturned boat, and how to navigate the Victoria inner, middle and
+            outer harbor. The course will primarily be focused on OC6 (6 person
+            canoe) but interested participants will have the opportunity to try
+            solo boats as well. Paddles, lifejackets and all the equipment you
+            will need to learn will be provided. Upon completion of this
+            introductory course new paddlers will be ready to continue to one of
+            our regular programs.
+            <br />
+            <b>Coaches:</b> Jeff Spear and Elizabeth Lee​
+            <br />
+            <br />
+            <b>Schedule:</b> Sessions will be announced early 2023 for the
+            spring!
+            <br />
+            <b>Racing:</b> Let's save that for later <br /> <br />
+            <b>Program Fees:</b> $80 for four 1.5 hour sessions
+            <br /> <span className="ml-3">*</span>
+            <i>
+              Paddlers will need a yearly CORA membership at $30 in order to
+              participate.
+            </i>
+            <br />
+            <b>button here</b>
+          </Text>
+        </div>
+        <img
+          className="w-full basis-1/2"
+          src="/images/learnprogram.jpeg"
+          alt="a crew of paddlers wearing green jerseys aproach a bridge in their OC6"
+          style={{ gridArea: "LImage" }}
+        />
+        <div
+          className="mx-auto bg-l48muted p-5 basis-1/2"
+          style={{ gridArea: "P" }}
+        >
+          <Text
+            variant="heading1"
+            transform="uppercase"
+            className="text-lg"
+            color="black"
+          >
+            Private Coaching
+          </Text>
+          <Text color="black">
+            <br />
+            Latitude 48's coaches are available for one-on-one or small group
+            coaching to both members and non-members. Our coaches have
+            experience coaching and racing with dragonboat and outrigger teams
+            from novice all the way up to world competition level. L48 coaches
+            can bring a unique perspective to your training and provide insight
+            into how to achieve your paddling goals, whatever they may be.
+            <br /> <br />
+            <b>Program Fees:</b> $50 for 60-90 minute session, $70 for two
+            people *Non-club members that need access to an OC1 will pay an
+            additional $20
+            <br />
+            <br />
+            <span className="ml-3">*</span>
+            <i>
+              Paddlers will need a yearly CORA membership at $30 in order to
+              participate.
+            </i>
+            <br />
+            <b>button here</b>
+          </Text>
+        </div>
+        <img
+          className="w-full basis-1/2"
+          src="/images/privateprogram.jpeg"
+          alt="a crew of paddlers wearing green jerseys aproach a bridge in their OC6"
+          style={{ gridArea: "PImage" }}
+        />
         <div />
       </div>
     </div>
