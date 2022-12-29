@@ -7,7 +7,7 @@ export default function HomeGridPartial() {
     <div>
       <div className={styles.container}>
         <div
-          className="mx-auto bg-amber-50 p-5 basis-1/2"
+          className="mx-auto bg-l48tan p-5 basis-1/2"
           style={{ gridArea: "H" }}
         >
           <Text variant="heading1" transform="uppercase" className="text-lg">
@@ -82,7 +82,7 @@ export default function HomeGridPartial() {
             canoes. Participants will have an opportunity to compete in local
             races, but fun and fitness are also primary goals for this program
             <br />
-            <b>Coach:</b> Jim Pearson and Bill Buckingham
+            <b>Coaches:</b> Jim Pearson and Bill Buckingham
             <br />
             <br />
             <b>Schedule:</b> OC6 Wednesday @ 6pm and Saturday @ 9am
@@ -105,7 +105,7 @@ export default function HomeGridPartial() {
         </div>
 
         <div
-          className="mx-auto bg-amber-50 p-5 basis-1/2"
+          className="mx-auto bg-l48grey p-5 basis-1/2"
           style={{ gridArea: "C" }}
         >
           <Text variant="heading1" transform="uppercase" className="text-lg">
@@ -121,7 +121,7 @@ export default function HomeGridPartial() {
             expected to prioritize training sessions with their teammates and
             have accountability to each other and the coaches to attend practice
             and work towards being their best on and off the water. <br />
-            <b>Coach:</b> James Hill and Melanie Conard
+            <b>Coaches:</b> James Hill and Melanie Conard
             <br />
             <br />
             <b>Schedule:</b> Tuesday and Thursday @ 6pm and Sunday @ 9am <br />
