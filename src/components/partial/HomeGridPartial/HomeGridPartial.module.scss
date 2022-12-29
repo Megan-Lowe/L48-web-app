@@ -6,7 +6,8 @@
     "MImage M"
     "C CImage"
     "LImage L"
-    "P PImage";
+    "P PImage"
+    "Contact Input";
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -20,6 +21,8 @@
       "L"
       "LImage"
       "P"
-      "PImage";
+      "PImage"
+      "Contact"
+      "Input";
   }
 }
