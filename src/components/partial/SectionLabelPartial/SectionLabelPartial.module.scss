@@ -1,0 +1,50 @@
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  text-align: center, relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: grey;
+  font-size: 32px;
+  z-index: 1;
+}
+
+/*<
+div class="image-container">
+<img src="image.jpg" alt="image">
+<div class="image-text">Text Overlay</div>
+</div> */
+/*
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "H HImage"
+    "MImage M"
+    "C CImage"
+    "LImage L"
+    "P PImage"
+    "Contact Input";
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "H"
+      "HImage"
+      "M"
+      "MImage"
+      "C"
+      "CImage"
+      "L"
+      "LImage"
+      "P"
+      "PImage"
+      "Contact"
+      "Input"; */
+  }
+}
