@@ -1,6 +1,7 @@
 import Text from "#components/base/Text";
 import Link from "next/link";
 import Image from "next/image";
+import ContactFormPartial from "../ContactFormPartial";
 
 export default function ContactGridPartial() {
   return (
@@ -50,14 +51,7 @@ export default function ContactGridPartial() {
         className="mx-auto bg-black p-5 basis-1/2"
         style={{ gridArea: "Input" }}
       >
-        <Text colour="white" text="2xl">
-          CONTACT LATITUDE 48 <br /> PADDLING CLUB
-        </Text>
-        <Text>
-          Victoria, BC, Canada
-          <br />
-          latitude48paddling@gmail.com
-        </Text>
+        <ContactFormPartial />
       </div>
     </>
   );
