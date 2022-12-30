@@ -1,11 +1,13 @@
 import Text from "#components/base/Text";
 import AppHeaderPartial from "#components/partial/AppHeaderPartial";
 import HomeGridPartial from "#components/partial/HomeGridPartial";
+import SectionLabelPartial from "#components/partial/SectionLabelPartial";
 
 export default function Home() {
   return (
     <>
       <AppHeaderPartial />
+      <SectionLabelPartial />
       <HomeGridPartial />
     </>
   );
