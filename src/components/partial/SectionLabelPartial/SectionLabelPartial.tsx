@@ -1,14 +1,23 @@
 import Text from "#components/base/Text";
 
-export default function SectionLabelPartial() {
+export default function SectionLabelPartial({
+  label,
+}: SectionLabelPartialProps) {
   return (
-    <div className="image-container">
+    <div className="w-full h-[108px] flex justify-center items-center relative">
       <img
-        className="w-full basis-1/2"
+        className="w-full h-full absolute object-cover z-[-1]"
         src="/images/span.jpeg"
-        alt="a greyscale image of misty mountains"
+        alt="bg image"
       />
-      <div className="image-text">Text Overlay</div>
+
+      <Text variant="heading2" color="black">
+        {label}
+      </Text>
     </div>
   );
 }
+
+export type SectionLabelPartialProps = {
+  label: string;
+};
