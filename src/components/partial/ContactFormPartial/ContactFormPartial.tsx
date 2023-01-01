@@ -21,31 +21,38 @@ export default function ContactFormPartial() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <FormGroup label="Name">
+      <FormGroup //label="Name">
+      >
         <ContactInputPartial
           className="flex-grow"
-          label="First Name"
-          {...register("first_name", { required: true })}
+          label="Name"
+          placeholder="Name *"
+          {...register("name", { required: true })}
         />
         <ContactInputPartial
           className="flex-grow"
-          label="Last Name"
-          {...register("last_name", { required: true })}
+          label="Phone Number"
+          placeholder="Phone Number"
+          {...register("phone_number", { required: false })}
         />
       </FormGroup>
 
-      <FormGroup label="Email">
+      <FormGroup //label="Email" >
+      >
         <ContactInputPartial
           className="flex-grow"
+          placeholder="Email *"
+          label="Email"
           {...register("email", { required: true })}
         />
       </FormGroup>
 
-      <FormGroup label="Message">
+      <FormGroup>
         <ContactInputPartial
           className="flex-grow"
           inputClassName="min-h-[100px]"
           as="textarea"
+          placeholder="Message *"
           {...register("message", { required: true })}
         />
       </FormGroup>
@@ -69,17 +76,13 @@ const FormGroup = ({
   children: React.ReactNode;
 }) => (
   <>
-    <Text className="block first:mt-0 mt-[29px]" variant="heading3">
-      {label} *
-    </Text>
-
     <div className="flex flex-row gap-4">{children}</div>
   </>
 );
 
 export type ContactFormValues = {
   first_name: string;
-  last_name: string;
+  phone_number: number;
   email: string;
   message: string;
 };
