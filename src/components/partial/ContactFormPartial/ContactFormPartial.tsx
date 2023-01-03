@@ -1,3 +1,4 @@
+import Button from "#components/base/Button";
 import Text from "#components/base/Text";
 import { useForm } from "react-hook-form";
 import ContactInputPartial from "../ContactInputPartial";
@@ -61,17 +62,21 @@ export default function ContactFormPartial() {
           className="flex-grow"
           inputClassName="min-h-[100px]"
           as="textarea"
-          placeholder="Message"
+          placeholder="Type your message here..."
           {...register("message", { required: false })}
         />
       </FormGroup>
 
       <div className="flex justify-center mt-6">
-        <button type="submit">
-          <Text transform="uppercase" variant="body1" as="span">
-            Send
+        <Button
+          type="submit"
+          variant="secondary"
+          className="flex-initial w-[356px] rounded-none"
+        >
+          <Text transform="uppercase" color="black" as="span">
+            Submit
           </Text>
-        </button>
+        </Button>
       </div>
     </form>
   );

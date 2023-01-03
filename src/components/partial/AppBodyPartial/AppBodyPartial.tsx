@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function AppBodyPartial() {
   return (
-    <div class="relative columns-1 sm:columns-2">
-      <img class="w-full" src="horizonprogram.jpeg" />
+    <div className="relative columns-1 sm:columns-2">
+      <img className="w-full" src="horizonprogram.jpeg" />
     </div>
   );
 }

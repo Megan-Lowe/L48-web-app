@@ -1,4 +1,6 @@
+import Button from "#components/base/Button/Button";
 import Text from "#components/base/Text";
+import Link from "next/link";
 import ContactGridPartial from "../ContactGridPartial";
 
 import styles from "./HomeGridPartial.module.scss";
@@ -41,7 +43,15 @@ export default function HomeGridPartial() {
           demonstrated competency in boat handling, have access to club OC1s and
           OC2 at no additional cost.
           <br />
-          <b>button here</b>
+          <br />
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdZcXEzie4ghrjCerzIt8P5_jzxKGOid9XGrA7360Z81z2Bpw/viewform"
+            target="_blank"
+          >
+            <Button variant="primary">
+              <b>REGISTER HERE</b>
+            </Button>
+          </Link>
         </Text>
       </div>
 
@@ -99,7 +109,15 @@ export default function HomeGridPartial() {
           demonstrated competency in boat handling, have access to club OC1s and
           OC2 at no additional cost.
           <br />
-          <b>button here</b>
+          <br />
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSds_xjYdlRTjKMczmSOrOejsxelHcVzzxsWmPAl3WmCbo9sSg/viewform"
+            target="_blank"
+          >
+            <Button variant="secondary">
+              <b>REGISTER HERE</b>
+            </Button>
+          </Link>
         </Text>
       </div>
 
@@ -141,7 +159,15 @@ export default function HomeGridPartial() {
           demonstrated competency in boat handling, have access to club OC1s and
           OC2 at no additional cost.
           <br />
-          <b>button here</b>
+          <br />
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd3Hp1GmHl278TdS9dIxXu2Zb7kNdR5uM1b7yx7eZKFCdTqHQ/viewform"
+            target="_blank"
+          >
+            <Button variant="primary">
+              <b>REGISTER HERE</b>
+            </Button>
+          </Link>
         </Text>
       </div>
 
@@ -232,7 +258,15 @@ export default function HomeGridPartial() {
             participate.
           </i>
           <br />
-          <b>button here</b>
+          <br />
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLScRfDHWm3cIcb__s6e6ltpskxJ96xhTf8ft-C5fzAS78KLEBw/viewform"
+            target="_blank"
+          >
+            <Button variant="secondary">
+              <b>REGISTER HERE</b>
+            </Button>
+          </Link>
         </Text>
       </div>
       <img
