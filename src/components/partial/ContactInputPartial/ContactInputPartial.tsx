@@ -20,7 +20,7 @@ function ContactInputPartial(
       />
 
       {label && (
-        <Text as="label" variant="body3" className="mt-2">
+        <Text as="label" variant="body3">
           {label}
         </Text>
       )}

@@ -46,14 +46,23 @@ export default function ContactFormPartial() {
           {...register("email", { required: true })}
         />
       </FormGroup>
+      <FormGroup //label="Subject" >
+      >
+        <ContactInputPartial
+          className="flex-grow"
+          placeholder="Subject"
+          label="Subject"
+          {...register("subject", { required: false })}
+        />
+      </FormGroup>
 
       <FormGroup>
         <ContactInputPartial
           className="flex-grow"
           inputClassName="min-h-[100px]"
           as="textarea"
-          placeholder="Message *"
-          {...register("message", { required: true })}
+          placeholder="Message"
+          {...register("message", { required: false })}
         />
       </FormGroup>
 
